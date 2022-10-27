@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 :root{
-    --primary:#3DCFD3;
+    --primary:#3dcfd3;
     --dark:#161616;
-    --pure:#FFFFFF;
-    --ternary:#898989;
-    --light:#F2F2F2;
+    --light:#FFFFFF;
+    --ternary:#F2F2F2;
+    --linkedin:#0A66C2;
+    --twitter:#00acee;
 }
 *{
     margin: 0;
@@ -75,16 +76,73 @@
     justify-content: space-between;
     align-items: center;
 }
-#home-section .profile-details .text-1{
-    font-size: 25px;
+#home-section .home-social-media{
+    width: 30px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-#home .profile-details .text-2{
-    font-size: 50px;
+#home-section .home-social-media a{
+    width: 30px;
+    height: 30px;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+#home-section .home-github-icon{
+    color: var(--dark);
+}
+#home-section .home-linkedin-icon{
+    color: var(--linkedin);
+}
+#home-section .home-twitter-icon{
+    color: var(--twitter);
+}
+#home-section .home-social-media a:hover{
+    transform: scale(1.4);
+    transition: 0.3s;
+}
+
+#home-section .profile-details{
+    width: 50%;
+}
+#home-section .profile-details .text-1{
+    font-size: 45px;
+}
+#home-section .profile-details .text-1-name{
     font-weight: 600;
     color: var(--primary);
 }
-#home .profile-details .text-3{
-    font-size: 35px;
+#home-section .profile-details .text-2{
+    font-size: 25px;
+    color: var(--ternary);
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+#home-section .profile-details .text-3{
+    color: var(--ternary);
+    margin-bottom: 30px;
+}
+#home-section .profile-details .appointment-btn{
+    cursor: pointer;
+    color: var(--primary);
+    background-color: transparent;
+    border: 1.5px solid var(--primary);
+    border-radius: 5px;
+    padding: 12px 15px;
+    font-family: 'Ubuntu' , sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+#home-section .profile-details .appointment-btn:hover{
+    border: none;
+    color: var(--dark);
+    background-color: var(--primary);
+    transition: 0.3s;
 }
 .shivendra-image{
     width: 25%;
@@ -92,7 +150,13 @@
 .shivendra-image>img{
     width: 100%;
 }
-
+#home_blob{
+    width: 250px;
+    fill: var(--primary);
+}
+#home_blob-image{
+    width: 200px;
+}
 /* About Section */
 #about-section{
     width: 100%;
