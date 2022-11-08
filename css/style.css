@@ -85,6 +85,7 @@
     font-family: 'Ubuntu' , sans-serif;
     min-height: 500px;
     background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+    background-attachment: fixed;
 }
 #home-section #home{
     width: 80%;
@@ -176,7 +177,7 @@
 /* About Section */
 #about-section{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     font-family: 'Ubuntu' , sans-serif;
     text-align: center;
     background-color: var(--ternary);
@@ -190,13 +191,14 @@
     color: var(--gray);
 }
 #about-section .about-part-1{
-    padding-top: 75px;
+    padding-top: 70px;
     margin-bottom: 75px;
 }
 #about-section .about-part-2{
     display: flex;
     justify-content: space-around;
     color: var(--gray);
+    margin-bottom: 75px;
 }
 #about-section .about-part-2 .about-image{
     width: 40%;
@@ -210,7 +212,7 @@
     text-align: justify;
     margin-right: 50px;
 }
-.about-intro-text-2{
+#about-section .about-intro-text-2{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -245,10 +247,65 @@
     transition: 0.3s;
 }
 
+/* skill-section */
+#skill-section{
+    width: 100%;
+    height: 100vh;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Ubuntu' , sans-serif;
+    min-height: 500px;
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+    background-attachment: fixed;
+}
+#skill-section #skill{
+    width: 80%;
+    height: 80vh;
+}
+#skill-section .skill-text-1{
+    text-align: center;
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 600;
+}
+#skill-section .frontend-text, #skill-section .backend-text{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--light);
+}
+#skill-section .frontend-text{
+    margin-bottom: 30px;
+}
+#skill-section .backend-text{
+    margin: 50px 0px 30px 0px;
+}
+#skill-section .frontend-icons{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#skill-section .backend-icons{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#skill-section .frontend-icons img, #skill-section .backend-icons img{
+    width: 100px;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    box-shadow: var(--primary) 0px 5px 15px;
+    padding: 10px;
+}
 /* contact-section */
 #contact-section{
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     font-family: 'Ubuntu' , sans-serif;
     text-align: center;
     background-color: var(--ternary);
@@ -262,7 +319,7 @@
     color: var(--gray);
 }
 #contact-section .contact-part-1{
-    padding-top: 100px;
+    padding-top: 70px;
     margin-bottom: 75px;
 }
 #contact-section .contact-part-2{
@@ -285,6 +342,7 @@
 #contact-section .contact-part-2 .contact-part-2-A .call-me-A, #contact-section .contact-part-2 .contact-part-2-A .email-A, #contact-section .contact-part-2 .contact-part-2-A .location-A{
     font-size: 20px;
     font-weight: 600;
+    color: var(--dark);
 }
 #contact-section .contact-part-2 .contact-part-2-B{
     width: 40%;
@@ -329,5 +387,41 @@
     border: 1.5px solid var(--primary);
     color: var(--primary);
     background-color: transparent;
+    transition: 0.3s;
+}
+.contact-part-2-A .contact-line, .contact-part-2-A .email-line, .contact-part-2-A .location-line{
+    color: var(--gray);
+}
+
+#contact-section .contact-part-3{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
+}
+#contact-section .contact-part-3 a{
+    width: 30px;
+    height: 30px;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#contact-section .contact-github-icon{
+    color: var(--dark);
+}
+#contact-section .contact-linkedin-icon{
+    color: var(--linkedin);
+}
+#contact-section .contact-twitter-icon{
+    color: var(--twitter);
+}
+#contact-section .contact-part-3 a:hover{
+    transform: scale(1.4);
     transition: 0.3s;
 }
