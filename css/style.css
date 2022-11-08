@@ -177,7 +177,7 @@
 /* About Section */
 #about-section{
     width: 100%;
-    height: 120vh;
+    height: 110vh;
     font-family: 'Ubuntu' , sans-serif;
     text-align: center;
     background-color: var(--ternary);
