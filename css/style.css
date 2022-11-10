@@ -299,8 +299,134 @@
     color: var(--primary);
     border: 1px solid var(--primary);
     border-radius: 5px;
-    box-shadow: var(--primary) 0px 5px 15px;
+    box-shadow: var(--primary) 0px 3px 8px;
     padding: 10px;
+}
+#skill-section .frontend-icons img:hover, #skill-section .backend-icons img:hover{
+    box-shadow: var(--primary) 0px 5px 15px;
+}
+/* education-section */
+/* #education-section{
+    width: 100%;
+    height: 110vh;
+    font-family: 'Ubuntu' , sans-serif;
+    text-align: center;
+    background-color: var(--ternary);
+} */
+/* project-section */
+#project-section{
+    width: 100%;
+    height: 115vh;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Ubuntu' , sans-serif;
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+    background-attachment: fixed;
+}
+#project-section .project-text-1{
+    text-align: center;
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 600;
+}
+#project-section .project-text-2{
+    font-size: 20px;
+}
+#project-section #project{
+    width: 80%;
+    height: 90vh;
+    margin-top: -20px;
+}
+#project-section .project-part-1{
+    width: 100%;
+    height: 75vh;
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+    box-shadow: var(--primary) 0px 3px 8px;
+}
+#project-section .project-part-1:hover{
+    box-shadow: var(--primary) 0px 5px 15px;
+}
+#project-section .project-part-1-A{
+    width: 55%;
+}
+#project-section .project-part-1-A-img img{
+    width: 100%;
+    height: 260px;
+}
+#project-section .project-part-1-A-tools{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+#project-section .project-part-1-A-tools img{
+    width: 40px;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: var(--primary) 0px 2px 5px;
+}
+#project-section .project-part-1-A-tools img:hover{
+    box-shadow: var(--primary) 0px 3px 8px;
+}
+#project-section .project-part-1-A-tools-text{
+    font-size: 25px;
+    color: var(--primary);
+}
+
+#project-section .project-part-1-B{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#project-section .project-part-1-B-header{
+    font-size: 30px;
+    color: var(--primary);
+}
+#project-section .project-part-1-B-desc{
+    text-align: justify;
+    font-size: 18px;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#project-section .project-part-1-B-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#project-section .project-part-1-B-btn a{
+    cursor: pointer;
+    color: var(--primary);
+    background-color: transparent;
+    border: 1.5px solid var(--primary);
+    border-radius: 7px;
+    padding: 9px 10px;
+    font-family: 'Ubuntu' , sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+#project-section .project-part-1-B-btn a:hover{
+    border: none;
+    color: var(--dark);
+    background-color: var(--primary);
+    transition: 0.3s;
+    width: fit-content;
+    height: fit-content;
 }
 /* contact-section */
 #contact-section{
