@@ -311,18 +311,18 @@ html{
 /* education-section */
 #education-section{
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     font-family: 'Ubuntu' , sans-serif;
     text-align: center;
     background-color: var(--ternary);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--dark);
 }
 #education-section #education{
     width: 80%;
-    height: 80vh;
-    border: 1px solid black;
+    height: 70vh;
 }
 #education-section .education-text-1{
     font-size: 30px;
@@ -330,6 +330,51 @@ html{
 }
 #education-section .education-text-2{
     font-size: 20px;
+    color: var(--gray);
+}
+#education-section .education-main{
+    width: 100%;
+    height: 60vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#education-section .education-main>div{
+    display: flex;
+}
+#education-section .education-main i{
+    font-size: 40px;
+}
+#education-section .education-part-1{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--primary) 0px 1px 0.5px;
+    margin-bottom: 10px;
+}
+#education-section .education-part-2{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--primary) 0px 1px 0.5px;
+}
+#education-section .education-part-1:hover{
+    box-shadow: var(--primary) 0px 5px 15px;
+}
+#education-section .education-part-2:hover{
+    box-shadow: var(--primary) 0px 5px 15px;
+}
+#education-section .education-part-1 .text-1, #education-section .education-part-2 .text-1{
+    font-size: 38px;
+    font-weight: 600;
+}
+#education-section .education-part-1 .text-2, #education-section .education-part-2 .text-2{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+}
+#education-section .education-part-1 .text-3, #education-section .education-part-2 .text-3{
+    font-size: 18px;
+    font-weight: 500;
     color: var(--gray);
 }
 /* project-section */
