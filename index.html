@@ -5,12 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Shivendra's Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="calendar.css">
 </head>
 
 <body>
@@ -102,17 +103,41 @@
                 <div class="skill-part-1">
                     <div class="frontend-text">Front End</div>
                     <div class="frontend-icons">
-                        <img src="media\icons8-html-5-250.png" alt="">
-                        <img src="media\icons8-css3-300.png" alt="">
-                        <img src="media\icons8-javascript-250.png" alt="">
+                        <div>
+                            <img src="media\icons8-html-5-250.png" alt="html">
+                            <div>HTML</div>
+                        </div>
+                        <div>
+                            <img src="media\icons8-css3-300.png" alt="css">
+                            <div>CSS</div>
+                        </div>
+                        <div>
+                            <img src="media\icons8-javascript-250.png" alt="js">
+                            <div>JavaScript</div>
+                        </div>
                     </div>
                     <div class="backend-text">Back End</div>
                     <div class="backend-icons">
-                        <img src="media\icons8-java-250.png" alt="java">
-                        <img src="media\icons8-sql-100.png" alt="sql">
-                        <img src="media\icons8-hibernate-100.png" alt="hibernate">
-                        <img src="media\icons8-amazon-web-services-300.png" alt="">
-                        <img src="media\icons8-rest-api-100.png" alt="api">
+                        <div>
+                            <img src="media\icons8-java-250.png" alt="java">
+                            <div>Java</div>
+                        </div>
+                        <div>
+                            <img src="media\icons8-sql-100.png" alt="sql">
+                            <div>SQL</div>
+                        </div>
+                        <div>
+                            <img src="media\icons8-hibernate-100.png" alt="hibernate">
+                            <div>Hibernate</div>
+                        </div>
+                        <div>
+                            <img src="media\icons8-amazon-web-services-300.png" alt="">
+                            <div>AWS</div>
+                        </div>
+                        <div>
+                            <img src="media\icons8-rest-api-100.png" alt="api">
+                            <div>Rest API</div>
+                        </div>
                     </div>
                 </div>
                 <div class="skill-part-2"></div>
@@ -128,19 +153,21 @@
                 </div>
                 <div class="education-main">
                     <div class="education-part-1">
-                        <i class="uil uil-navigator"></i> &nbsp;&nbsp;
                         <div>
                             <div class="text-1">Full Stack Web Development</div>
                             <div class="text-2">MASAI SCHOOL</div>
                             <div class="text-3">May, 2022 - Jan, 2023</div>
+                            <br>
+                            <div class="text-4">Completed a Java Back End Development course and accquired strong knowledge in Hibernate, JPA, RDBMS, LLD, Spring Boot, Deployment on AWS, etc. and 1200+ hours coding exeperience at Masai School.</div>
                         </div>
                     </div>
                     <div class="education-part-2">
-                        <i class="uil uil-navigator"></i> &nbsp;&nbsp;
                         <div>
                             <div class="text-1">Bachelor of Arts (Political Science Hons.)</div>
                             <div class="text-2">M. J. K. College (Bettiah)</div>
                             <div class="text-3">June, 2020 - Pursuing</div>
+                            <br>
+                            <div class="text-4">Pursuing Bachelor of Arts (Political Science Hons.) from M. J. K. College, Bettiah - (845438) from Indra Gandhi National Open University.</div>
                         </div>
                     </div>
                 </div>
@@ -197,6 +224,22 @@
                 </div>
             </div>
         </section>
+
+        <section id="github-calender-section">
+            <div id="github-stats">
+                <h1>Days I Code</h1>
+                <br>
+                <div class="calendar" style="width:100%; margin-bottom: 50px;">    
+                </div>
+               
+               <div id="gs-1">
+                    <img  src="https://github-readme-streak-stats.herokuapp.com/?user=shivendra0852&" alt="shivendra-0852" />
+            
+                    <img  src="https://github-readme-stats.vercel.app/api?username=shivendra0852&show_icons=true" alt="shivendra-0852" />
+                </div>
+             </div>
+        </section>
+
         <section id="contact-section">
             <div id="contact">
                 <div class="contact-part-1">
@@ -253,3 +296,8 @@
 
 </html>
 <script src="js/script.js"></script>
+<script src="calendar.js"></script>
+<script>
+    GitHubCalendar(".calendar", "shivendra0852");
+    GitHubCalendar(".calendar", "shivendra0852", { responsive: true });
+</script>
