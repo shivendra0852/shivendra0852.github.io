@@ -66,7 +66,7 @@ html{
 }
 
 /* navbar-resposiveness-section */
-@media all and (min-width:769px) and (max-width:1029px){
+@media all and (min-width:769px) and (max-width:1040px){
     #navbar .name-logo{
         color: var(--light);
         font-size: 25px;
@@ -74,8 +74,11 @@ html{
     }
     #navbar .menu a{
         color: var(--light);
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 500;
+    }
+    #navbar .menu>a:nth-child(6){
+        display: none;
     }
 }
 #home-section{
@@ -177,6 +180,46 @@ html{
 #home_blob-image{
     width: 200px;
 }
+ /* home-section-reposiveness */
+ @media all and (min-width:769px) and (max-width:1040px){
+    #home-section .profile-details .text-1{
+        font-size: 33px;
+    }
+    #home-section .profile-details .text-1-name{
+        font-weight: 500;
+        color: var(--primary);
+    }
+    #home-section .profile-details .text-2{
+        font-size: 22px;
+        color: var(--ternary);
+        margin-top: 8px;
+        margin-bottom: 15px;
+    }
+    #home-section .profile-details .text-3{
+        color: var(--ternary);
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+    #home-section .profile-details .appointment-btn{
+        cursor: pointer;
+        color: var(--primary);
+        background-color: transparent;
+        border: 1.5px solid var(--primary);
+        border-radius: 6px;
+        padding: 10px 13px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    #home-section .profile-details .appointment-btn:hover{
+        border: none;
+        color: var(--dark);
+        background-color: var(--primary);
+        transition: 0.3s;
+    }
+ }
+
+
 /* About Section */
 #about-section{
     width: 100%;
@@ -249,7 +292,78 @@ html{
     background-color: transparent;
     transition: 0.3s;
 }
+/* about-section-responsiveness */
+@media all and (min-width:769px) and (max-width:1040px){
+    #about-section .about-part-2 .about-image img{
+        width: 250px;
+        border-radius: 15px;
+    }
+    #about-section .about-part-2 .about-intro{
+        width: 50%;
+        text-align: justify;
+        margin-right: 50px;
+        font-size: 13px;
+    }
+    #about-section .about-intro-text-2{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 31px;
+        margin-bottom: 50px;
+    }
+    .about-intro-text-2 .box-1, .about-intro-text-2 .box-2, .about-intro-text-2 .box-3{
+        width: 83px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .about-intro-text-2 .box-1 .text-1, .about-intro-text-2 .box-2 .text-2, .about-intro-text-2 .box-3 .text-3{
+        color: var(--dark);
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .about-intro .resume-btn{
+        cursor: pointer;
+        color: var(--dark);
+        background-color: var(--primary);
+        border: none;
+        border-radius: 6px;
+        padding: 10px 13px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    .about-intro .resume-btn:hover{
+        border: 1.5px solid var(--primary);
+        color: var(--primary);
+        background-color: transparent;
+        transition: 0.3s;
+    }
+}
 
+@media all and (min-width:890px) and (max-width:1040px){
+    #about-section .about-part-2 .about-intro{
+        width: 50%;
+        text-align: justify;
+        margin-right: 50px;
+        font-size: 14px;
+    }
+    #about-section .about-intro-text-2{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
+@media all and (min-width:959px) and (max-width:1040px){
+    #about-section .about-intro-text-2{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 40px;
+        margin-bottom: 47px;
+    }
+}
 /* skill-section */
 #skill-section{
     width: 100%;
@@ -315,6 +429,23 @@ html{
 #skill-section .frontend-icons img:hover, #skill-section .backend-icons img:hover{
     box-shadow: var(--primary) 0px 5px 15px;
 }
+/* skill-section-responsiveness */
+@media all and (min-width:769px) and (max-width:1040px){
+    #skill-section .frontend-icons img, #skill-section .backend-icons img{
+        width: 70px;
+        color: var(--primary);
+        border: 1px solid var(--primary);
+        border-radius: 5px;
+        box-shadow: var(--primary) 0px 3px 8px;
+        padding: 10px;
+    }
+    #skill-section .frontend-icons>div>div, #skill-section .backend-icons>div>div{
+        font-size: 1rem;
+        color: var(--primary);
+        line-height: 50px;
+    }
+}
+
 /* education-section */
 #education-section{
     width: 100%;
@@ -389,7 +520,58 @@ html{
 }
 #education-section .education-part-1 .text-4, #education-section .education-part-2 .text-4{
     color: var(--gray);
-}    
+}
+/* education-section-responsiveness */
+@media all and (min-width:769px) and (max-width:1040px){
+    #education-section .education-part-1 .text-2, #education-section .education-part-2 .text-2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #education-section .education-part-1 .text-1, #education-section .education-part-2 .text-1{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    #education-section .education-part-1 .text-2, #education-section .education-part-2 .text-2{
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(50, 50, 50);
+    }
+    #education-section .education-part-1 .text-3, #education-section .education-part-2 .text-3{
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--gray);
+    }
+    #education-section .education-part-1 .text-4, #education-section .education-part-2 .text-4{
+        font-size: 12px;
+    }
+
+    @media all and (min-width:769px) and (max-width:860px){
+        #education-section .education-part-1 .text-2, #education-section .education-part-2 .text-2{
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+        #education-section .education-part-1 .text-1, #education-section .education-part-2 .text-1{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        #education-section .education-part-1 .text-2, #education-section .education-part-2 .text-2{
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(50, 50, 50);
+        }
+        #education-section .education-part-1 .text-3, #education-section .education-part-2 .text-3{
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--gray);
+        }
+        #education-section .education-part-1 .text-4, #education-section .education-part-2 .text-4{
+            margin-top: -10px;
+            font-size: 12px;
+        }
+    
+    }
+}
 /* project-section */
 #project-section{
     width: 100%;
@@ -507,7 +689,89 @@ html{
     width: fit-content;
     height: fit-content;
 }
-
+/* project-section-responsiveness */
+@media all and (min-width:769px) and (max-width:1040px){
+    #project-section .project-part-1{
+        width: 100%;
+        height: 65vh;
+        margin-top: 30px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 7px;
+        box-shadow: var(--primary) 0px 3px 8px;
+    }
+    #project-section .project-part-1-A{
+        width: 55%;
+    }
+    #project-section .project-part-1-A-img img{
+        width: 100%;
+        height: 220px;
+        background-color: var(--primary);
+        opacity: 0.8;
+    }
+    #project-section .project-part-1-A-tools img{
+        width: 25px;
+        border: 1px solid var(--primary);
+        border-radius: 3px;
+        padding: 5px;
+        box-shadow: var(--primary) 0px 2px 5px;
+    }
+    #project-section .project-part-1-A-tools-text{
+        font-size: 20px;
+        color: var(--primary);
+    }
+    #project-section .project-part-1-B-header{
+        font-size: 25px;
+        color: var(--primary);
+    }
+    #project-section .project-part-1-B-desc{
+        text-align: justify;
+        font-size: 12px;
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: -50px;
+    }
+    #project-section .project-part-1-B-btn{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #project-section .project-part-1-B-btn a{
+        cursor: pointer;
+        color: var(--primary);
+        background-color: transparent;
+        border: 1.5px solid var(--primary);
+        border-radius: 6px;
+        padding: 7px 8px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+    #project-section .project-part-1-B-btn a:hover{
+        border: none;
+        color: var(--dark);
+        background-color: var(--primary);
+        transition: 0.3s;
+        width: fit-content;
+        height: fit-content;
+    }
+    @media all and (min-width:769px) and (max-width:1040px){
+        #project-section .project-part-1-B-desc{
+            text-align: justify;
+            font-size: 11px;
+            width: 100%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: -50px;
+        }
+    }
+}
 /* github-calender-section */
 #github-calender-section{
     width: 100%;
@@ -605,11 +869,11 @@ html{
     font-family: 'Ubuntu' , sans-serif;
     font-weight: 500;
 }
-.contact-part-2-B .name, .contact-part-2-B .email{
+.contact-part-2-B .name, .contact-part-2-B .phone{
     width: 175px;
     height: 30px;
 }
-.contact-part-2-B .phone, .contact-part-2-B .message{
+.contact-part-2-B .email, .contact-part-2-B .message{
     width: 350px;
     height: 30px;
 }
@@ -668,7 +932,291 @@ html{
     transform: scale(1.4);
     transition: 0.3s;
 }
-
+/* contacts-section-responsiveness */
+@media all and (min-width:769px) and (max-width:1040px){
+    #contact-section .contact-part-2{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 25px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-A>div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-A>div>i{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-A .call-me-A, #contact-section .contact-part-2 .contact-part-2-A .email-A, #contact-section .contact-part-2 .contact-part-2-A .location-A{
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--dark);
+    }
+    
+    #contact-section .contact-part-2 .contact-part-2-B{
+        width: 40%;
+    }
+    #contact-section .contact-part-2 .contact-part-2-B input{
+        padding: 17px 0px 17px 8px;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        color: var(--gray);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-B input:last-child{
+        padding-bottom: 50px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-B input::placeholder{
+        font-family: 'Ubuntu' , sans-serif;
+        font-weight: 500;
+    }
+    .contact-part-2-B .name, .contact-part-2-B .phone{
+        width: 140px;
+        height: 30px;
+    }
+    .contact-part-2-B .name{
+        margin-right: 15px;
+    }
+    .contact-part-2-B .email, .contact-part-2-B .message{
+        width: 300px;
+        height: 30px;
+    }
+    #contact-section .send-message-btn{
+        width: 50%;
+        cursor: pointer;
+        color: var(--dark);
+        background-color: var(--primary);
+        border: none;
+        border-radius: 6px;
+        padding: 10px 12px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-left: 27.5%;
+    }
+    #contact-section .send-message-btn:hover{
+        border: 1.5px solid var(--primary);
+        color: var(--primary);
+        background-color: transparent;
+        transition: 0.3s;
+    }
+}
+@media all and (min-width:769px) and (max-width:790px){
+    .contact-part-2-B .name{
+        margin-right: 7.5px;
+    }
+}
+@media all and (min-width:600px) and (max-width:768px){
+    #contact-section .contact-part-2{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 25px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-A>div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-A>div>i{
+        font-size: 22px;
+        margin-right: 10px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-A .call-me-A, #contact-section .contact-part-2 .contact-part-2-A .email-A, #contact-section .contact-part-2 .contact-part-2-A .location-A{
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--dark);
+    }
+    .contact-part-2-A .contact-line, .contact-part-2-A .email-line, .contact-part-2-A .location-line{
+        font-size: 15px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-B{
+        width: 40%;
+    }
+    #contact-section .contact-part-2 .contact-part-2-B input{
+        padding: 17px 0px 17px 8px;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        color: var(--gray);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-B input:last-child{
+        padding-bottom: 50px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-B input::placeholder{
+        font-family: 'Ubuntu' , sans-serif;
+        font-weight: 500;
+    }
+    .contact-part-2-B .name, .contact-part-2-B .phone, .contact-part-2-B .email, .contact-part-2-B .message{
+        width: 200px;
+        height: 30px;
+    }
+    #contact-section .contact-part-2{
+        margin-bottom: 10px;
+    }
+    #contact-section .send-message-btn{
+        width: 50%;
+        cursor: pointer;
+        color: var(--dark);
+        background-color: var(--primary);
+        border: none;
+        border-radius: 6px;
+        padding: 10px 12px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-left: 40.5%;
+        margin-top: 30px;
+    }
+    #contact-section .send-message-btn:hover{
+        border: 1.5px solid var(--primary);
+        color: var(--primary);
+        background-color: transparent;
+        transition: 0.3s;
+    }
+}
+@media all and (min-width:650px) and (max-width:700px){
+    #contact-section .send-message-btn{
+        margin-left: 40%;
+    }
+}
+@media all and (min-width:600px) and (max-width:650px){
+    #contact-section .send-message-btn{
+        margin-left: 41%;
+    }
+}
+@media all and (min-width:480px) and (max-width:600px){
+    #contact-section .contact-part-2{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 25px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-A>div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-A>div>i{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-A .call-me-A, #contact-section .contact-part-2 .contact-part-2-A .email-A, #contact-section .contact-part-2 .contact-part-2-A .location-A{
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--dark);
+    }
+    .contact-part-2-A .contact-line, .contact-part-2-A .email-line, .contact-part-2-A .location-line{
+        font-size: 13px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-B{
+        width: 40%;
+    }
+    #contact-section .contact-part-2 .contact-part-2-B input{
+        padding: 17px 0px 17px 8px;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        color: var(--gray);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-B input:last-child{
+        padding-bottom: 50px;
+    }
+    #contact-section .contact-part-2 .contact-part-2-B input::placeholder{
+        font-family: 'Ubuntu' , sans-serif;
+        font-weight: 500;
+    }
+    .contact-part-2-B .name, .contact-part-2-B .phone, .contact-part-2-B .email, .contact-part-2-B .message{
+        width: 170px;
+        height: 30px;
+    }
+    #contact-section .contact-part-2{
+        margin-bottom: 10px;
+    }
+    #contact-section .send-message-btn{
+        width: 50%;
+        cursor: pointer;
+        color: var(--dark);
+        background-color: var(--primary);
+        border: none;
+        border-radius: 6px;
+        padding: 12px 12px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-left: 45%;
+        margin-top: 30px;
+    }
+    #contact-section .send-message-btn:hover{
+        border: 1.5px solid var(--primary);
+        color: var(--primary);
+        background-color: transparent;
+        transition: 0.3s;
+    }
+}
+@media all and (min-width:480px) and (max-width:550px){
+    #contact-section .send-message-btn{
+        margin-left: 48%;
+    }
+}
+@media all and (min-width:320px) and (max-width:480px){
+    #contact-section{
+        width: 100%;
+        height: auto;
+        font-family: 'Ubuntu' , sans-serif;
+        text-align: center;
+        background-color: var(--ternary);
+    }
+    #contact-section #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #contact-section .contact-text-1{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #contact-section .contact-text-2{
+        font-size: 17px;
+        color: var(--gray);
+    }
+    #contact-section .contact-part-2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 25px;
+        margin-top: -20px;
+    }
+    .contact-part-2-B .name, .contact-part-2-B .phone, .contact-part-2-B .email, .contact-part-2-B .message{
+        width: 230%;
+        height: 30px;
+    }
+    #contact-section .send-message-btn{
+        width: 40%;
+        cursor: pointer;
+        color: var(--dark);
+        background-color: var(--primary);
+        border: none;
+        border-radius: 6px;
+        padding: 10px 10px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-left: 25px;
+    }
+    #contact-section .contact-part-3{
+        width: 150px;
+        height: 30px;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
 /* footer-seciton */
 #footer-section{
     width: 100%;
@@ -685,7 +1233,21 @@ html{
 #footer-section .footer-name{
     color: var(--primary);
 }
-
+/* #footer-section-responsiveness */
+@media all and (min-width:320px) and (max-width:480px){
+    #footer-section{
+        width: 100%;
+        height: 35px;
+        font-family: 'Ubuntu' , sans-serif;
+        color: var(--light);
+        background-color: black;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
+}
 
 
 
