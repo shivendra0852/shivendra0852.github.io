@@ -81,6 +81,8 @@ html{
         display: none;
     }
 }
+
+/* home-section */
 #home-section{
     width: 100%;
     height: 100vh;
@@ -99,7 +101,7 @@ html{
     justify-content: space-between;
     align-items: center;
 }
-#home-section .home-social-media{
+/* #home-section .home-social-media{
     width: 30px;
     height: 150px;
     display: flex;
@@ -128,7 +130,7 @@ html{
 #home-section .home-social-media a:hover{
     transform: scale(1.4);
     transition: 0.3s;
-}
+} */
 
 #home-section .profile-details{
     width: 50%;
@@ -219,7 +221,112 @@ html{
     }
  }
 
+ @media all and (min-width:480px) and (max-width:768px){
+    #home-section{
+        width: 100%;
+        height: 100vh;
+    }
+    #home-section #home{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #home-section .profile-details{
+        width: 100%;
+    }
+    #home-section .profile-details .text-1{
+        font-size: 35px;
+    }
+    #home-section .profile-details .text-1-name{
+        font-weight: 500;
+        color: var(--primary);
+    }
+    #home-section .profile-details .text-2{
+        font-size: 23px;
+        color: var(--ternary);
+        margin-top: 8px;
+        margin-bottom: 15px;
+    }
+    #home-section .profile-details .text-3{
+        color: var(--ternary);
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+    .shivendra-image{
+        margin-left: -50%;
+    }
+    #home_blob{
+        width: 180px;
+        fill: var(--primary);
+    }
+    #home-section .profile-details .appointment-btn{
+        cursor: pointer;
+        color: var(--primary);
+        background-color: transparent;
+        border: 1.5px solid var(--primary);
+        border-radius: 6px;
+        padding: 10px 13px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+ }
 
+ @media all and (min-width:320px) and (max-width:480px){
+    #home-section{
+        width: 100%;
+        height: 100vh;
+    }
+    #home-section #home{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #home-section .profile-details{
+        width: 100%;
+    }
+    #home-section .profile-details .text-1{
+        font-size: 30px;
+        margin-top: 5%;
+    }
+    #home-section .profile-details .text-1-name{
+        font-weight: 500;
+        color: var(--primary);
+    }
+    #home-section .profile-details .text-2{
+        font-size: 20px;
+        color: var(--ternary);
+        margin-top: 8px;
+        margin-bottom: 15px;
+    }
+    #home-section .profile-details .text-3{
+        color: var(--ternary);
+        margin-bottom: 30px;
+        font-size: 13px;
+    }
+    .shivendra-image{
+        margin-left: -50%;
+    }
+    #home_blob{
+        width: 180px;
+        fill: var(--primary);
+    }
+    #home-section .profile-details .appointment-btn{
+        cursor: pointer;
+        color: var(--primary);
+        background-color: transparent;
+        border: 1.5px solid var(--primary);
+        border-radius: 6px;
+        padding: 10px 10px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+ }
 /* About Section */
 #about-section{
     width: 100%;
@@ -364,6 +471,104 @@ html{
         margin-bottom: 47px;
     }
 }
+@media all and (min-width:480px) and (max-width:768px){
+    #about-section{
+        width: 100%;
+        height: 100vh;
+        font-family: 'Ubuntu' , sans-serif;
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        background-color: var(--ternary);
+    }
+    #about-section .about-text-2{
+        margin-bottom: -20px;
+    }
+    #about-section #about{
+        width: 85%;
+    }
+    #about-section .about-part-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--gray);
+        margin-bottom: 75px;
+    }
+    #about-section .about-part-2 .about-image{
+        display: none;
+    }
+    #about-section .about-part-2 .about-intro{
+        width: 100%;
+        text-align: justify;
+        margin-right: 0px;
+    }
+}
+@media all and (min-width:320px) and (max-width:480px){
+    #about-section{
+        width: 100%;
+        height: auto;
+        font-family: 'Ubuntu' , sans-serif;
+        display: flex;
+        justify-content: center;
+        background-color: var(--ternary);
+    }
+    #about-section .about-text-1{
+        font-size: 25px;
+    }
+    #about-section .about-text-2{
+        margin-bottom: -20px;
+        font-size: 1rem;
+    }
+    #about-section #about{
+        width: 90%;
+    }
+    #about-section .about-part-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--gray);
+        margin-bottom: 75px;
+    }
+    #about-section .about-part-2 .about-image{
+        display: none;
+    }
+    #about-section .about-part-2 .about-intro{
+        width: 100%;
+        text-align: justify;
+        margin-right: 0px;
+    }
+    #about-section .about-part-2 .about-intro-text-1{
+        font-size: 13px;
+    }
+    #about-section .about-intro-text-2{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+    .about-intro-text-2 .box-1, .about-intro-text-2 .box-2, .about-intro-text-2 .box-3{
+        width: 80px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .about-intro-text-2 .box-1 .text-1, .about-intro-text-2 .box-2 .text-2, .about-intro-text-2 .box-3 .text-3{
+        color: var(--dark);
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .about-intro .resume-btn{
+        cursor: pointer;
+        color: var(--dark);
+        background-color: var(--primary);
+        border: none;
+        border-radius: 6px;
+        padding: 9px 11px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+}
 /* skill-section */
 #skill-section{
     width: 100%;
@@ -445,7 +650,33 @@ html{
         line-height: 50px;
     }
 }
-
+@media all and (min-width:480px) and (max-width:768px){
+    #skill-section .frontend-icons{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #skill-section .backend-icons{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #skill-section .frontend-icons img, #skill-section .backend-icons img{
+        width: 70px;
+        color: var(--primary);
+        border: 1px solid var(--primary);
+        border-radius: 5px;
+        box-shadow: var(--primary) 0px 3px 8px;
+        padding: 10px;
+    }
+    #skill-section .frontend-icons>div>div, #skill-section .backend-icons>div>div{
+        font-size: 1rem;
+        color: var(--primary);
+        line-height: 50px;
+    }
+}
 /* education-section */
 #education-section{
     width: 100%;
@@ -1234,6 +1465,20 @@ html{
     color: var(--primary);
 }
 /* #footer-section-responsiveness */
+@media all and (min-width:480px) and (max-width:768px){
+    #footer-section{
+        width: 100%;
+        height: 45px;
+        font-family: 'Ubuntu' , sans-serif;
+        color: var(--light);
+        background-color: black;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+    }
+}
 @media all and (min-width:320px) and (max-width:480px){
     #footer-section{
         width: 100%;
