@@ -64,7 +64,15 @@ html{
     color: var(--light);
     transition: 0.3s;
 }
-
+#navbar .menu-btn{
+    color: var(--light);
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+#navbar .menu-btn:hover{
+    color: var(--light);
+}
 /* navbar-resposiveness-section */
 @media all and (min-width:769px) and (max-width:1040px){
     #navbar .name-logo{
@@ -79,6 +87,36 @@ html{
     }
     #navbar .menu>a:nth-child(6){
         display: none;
+    }
+}
+@media (max-width:768px){
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    #navbar .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    #navbar .menu{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background: var(--dark);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+    #navbar .menu.active{
+        left: 0;
+    }
+    #navbar .menu a{
+        color: white;
+        margin-bottom: 25px;
+        font-size: 25px;
     }
 }
 
@@ -474,7 +512,7 @@ html{
 @media all and (min-width:480px) and (max-width:768px){
     #about-section{
         width: 100%;
-        height: 100vh;
+        height: auto;
         font-family: 'Ubuntu' , sans-serif;
         /* text-align: center; */
         display: flex;
@@ -485,7 +523,7 @@ html{
         margin-bottom: -20px;
     }
     #about-section #about{
-        width: 85%;
+        width: 80%;
     }
     #about-section .about-part-2{
         display: flex;
@@ -563,7 +601,7 @@ html{
         background-color: var(--primary);
         border: none;
         border-radius: 6px;
-        padding: 9px 11px;
+        padding: 10px 12px;
         font-family: 'Ubuntu' , sans-serif;
         font-size: 0.8rem;
         font-weight: 500;
@@ -636,6 +674,39 @@ html{
 }
 /* skill-section-responsiveness */
 @media all and (min-width:769px) and (max-width:1040px){
+    #skill-section{
+        width: 100%;
+        height: 110vh;
+        color: var(--light);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Ubuntu' , sans-serif;
+        min-height: 500px;
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+        background-attachment: fixed;
+    }
+    #skill-section #skill{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+    }
+    #skill-section .frontend-icons{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #skill-section .backend-icons{
+        width: 500px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
     #skill-section .frontend-icons img, #skill-section .backend-icons img{
         width: 70px;
         color: var(--primary);
@@ -651,20 +722,41 @@ html{
     }
 }
 @media all and (min-width:480px) and (max-width:768px){
+    #skill-section{
+        width: 100%;
+        height: 110vh;
+        color: var(--light);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Ubuntu' , sans-serif;
+        min-height: 500px;
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+        background-attachment: fixed;
+    }
+    #skill-section #skill{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+    }
     #skill-section .frontend-icons{
-        width: 90%;
+        width: 80%;
         margin: auto;
         display: flex;
         justify-content: space-evenly;
     }
     #skill-section .backend-icons{
-        width: 90%;
+        width: 500px;
         margin: auto;
         display: flex;
         justify-content: space-evenly;
     }
     #skill-section .frontend-icons img, #skill-section .backend-icons img{
-        width: 70px;
+        width: 60px;
         color: var(--primary);
         border: 1px solid var(--primary);
         border-radius: 5px;
@@ -673,6 +765,66 @@ html{
     }
     #skill-section .frontend-icons>div>div, #skill-section .backend-icons>div>div{
         font-size: 1rem;
+        color: var(--primary);
+        line-height: 50px;
+    }
+}
+
+@media all and (min-width:320px) and (max-width:480px){
+    #skill-section{
+        width: 100%;
+        height: 100vh;
+        color: var(--light);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Ubuntu' , sans-serif;
+        min-height: 500px;
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+        background-attachment: fixed;
+    }
+    #skill-section #skill{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+    }
+    #skill-section .skill-text-1{
+        text-align: center;
+        color: var(--primary);
+        font-size: 27px;
+        font-weight: 600;
+    }
+    #skill-section .frontend-text, #skill-section .backend-text{
+        font-size: 25px;
+        font-weight: 500;
+        color: var(--light);
+    }
+    #skill-section .frontend-icons{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    #skill-section .backend-icons{
+        width: 280px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    #skill-section .frontend-icons img, #skill-section .backend-icons img{
+        width: 40px;
+        color: var(--primary);
+        border: 1px solid var(--primary);
+        border-radius: 5px;
+        box-shadow: var(--primary) 0px 3px 8px;
+        padding: 10px;
+    }
+    #skill-section .frontend-icons>div>div, #skill-section .backend-icons>div>div{
+        font-size: 13px;
         color: var(--primary);
         line-height: 50px;
     }
@@ -735,6 +887,20 @@ html{
 #education-section .education-part-2:hover{
     box-shadow: var(--primary) 0px 5px 15px;
 }
+#education-section .education-part-1 .certificate-btn{
+    display: none;
+}
+/* #education-section .education-part-1 .certificate-btn{
+    cursor: pointer;
+    color: var(--dark);
+    background-color: var(--primary);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-family: 'Ubuntu' , sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+} */
 #education-section .education-part-1 .text-1, #education-section .education-part-2 .text-1{
     font-size: 25px;
     font-weight: 600;
@@ -803,18 +969,166 @@ html{
     
     }
 }
+@media all and (min-width:480px) and (max-width:768px){
+    #education-section{
+        width: 100%;
+        height: 100vh;
+    }
+    #education-section #education{
+        width: 85%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #education-section .education-main{
+        width: 100%;
+        height: 70vh;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #education-section .education-part-1{
+        width: 100%;
+        height: 160px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: var(--primary) 0px 3px 8px;
+        margin-bottom: 10px;
+    }
+    #education-section .education-part-2{
+        width: 100%;
+        height: 150px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: var(--primary) 0px 3px 8px;
+    }
+    #education-section .education-part-2 .text-2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #education-section .education-part-1 .text-4, #education-section .education-part-2 .text-4{
+        display: none;
+    }
+    #education-section .education-part-1 .certificate-btn{
+        width: 34%;
+        display: block;
+        cursor: pointer;
+        color: var(--dark);
+        background-color: var(--primary);
+        border: none;
+        border-radius: 6px;
+        padding: 10px 12px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-top: 12px;
+    }
+    #education-section .education-part-1 .certificate-btn:hover{
+        border: 1.5px solid var(--primary);
+        color: var(--primary);
+        background-color: transparent;
+        transition: 0.3s;
+    }
+}
+@media all and (min-width:320px) and (max-width:480px){
+    #education-section{
+        width: 100%;
+        height: 100vh;
+    }
+    #education-section #education{
+        width: 90%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #education-section .education-text-1{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #education-section .education-text-2{
+        font-size: 17px;
+        color: var(--gray);
+    }
+    #education-section .education-main{
+        height: 70vh;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #education-section .education-part-1{
+        width: 100%;
+        height: 140px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: var(--primary) 0px 3px 8px;
+        margin-bottom: 10px;
+    }
+    #education-section .education-part-2{
+        width: 100%;
+        height: 120px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: var(--primary) 0px 3px 8px;
+    }
+    #education-section .education-part-2 .text-2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #education-section .education-part-1 .text-1, #education-section .education-part-2 .text-1{
+        font-size: 17px;
+    }
+    #education-section .education-part-1 .text-2, #education-section .education-part-2 .text-2{
+        font-size: 14px;
+    }
+    #education-section .education-part-1 .text-3, #education-section .education-part-2 .text-3{
+        font-size: 13px;
+    }
+    #education-section .education-part-1 .text-4, #education-section .education-part-2 .text-4{
+        display: none;
+    }
+    #education-section .education-part-1 .certificate-btn{
+        width: 50%;
+        display: block;
+        cursor: pointer;
+        color: var(--dark);
+        background-color: var(--primary);
+        border: none;
+        border-radius: 6px;
+        padding: 10px 12px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-top: 12px;
+    }
+    #education-section .education-part-1 .certificate-btn:hover{
+        border: 1.5px solid var(--primary);
+        color: var(--primary);
+        background-color: transparent;
+        transition: 0.3s;
+    }
+} 
 /* project-section */
 #project-section{
     width: 100%;
-    height: 120vh;
+    height: 400vh;
     color: var(--light);
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
     font-family: 'Ubuntu' , sans-serif;
     background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
     background-attachment: fixed;
+}
+#project-section #project{
+    width: 80%;
+    height: 90%;
+    margin-top: 75px;
 }
 #project-section .project-text-1{
     text-align: center;
@@ -825,15 +1139,11 @@ html{
 #project-section .project-text-2{
     font-size: 20px;
 }
-#project-section #project{
-    width: 80%;
-    height: 90vh;
-    margin-top: -20px;
-}
 #project-section .project-part-1{
     width: 100%;
     height: 75vh;
     margin-top: 30px;
+    margin-bottom: 100px;
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -854,7 +1164,7 @@ html{
 }
 #project-section .project-part-1-A-tools{
     display: flex;
-    width: 30%;
+    width: 40%;
     justify-content: space-between;
     align-items: center;
     margin: auto;
@@ -883,13 +1193,16 @@ html{
     justify-content: space-between;
     flex-direction: column;
 }
+#project-section .project-part-1-header{
+    display: none;
+}
 #project-section .project-part-1-B-header{
     font-size: 30px;
     color: var(--primary);
 }
 #project-section .project-part-1-B-desc{
     text-align: justify;
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
     height: 75%;
     display: flex;
@@ -899,7 +1212,7 @@ html{
 #project-section .project-part-1-B-btn{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 #project-section .project-part-1-B-btn a{
     cursor: pointer;
@@ -1003,10 +1316,248 @@ html{
         }
     }
 }
+@media all and (min-width:480px) and (max-width:768px){
+    #project-section .project-part-1{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border-radius: 7px;
+        box-shadow: var(--primary) 0px 3px 8px;
+        margin-bottom: 30px;
+    }
+    #project-section .project-text-1{
+        text-align: center;
+        color: var(--primary);
+        font-size: 28px;
+        font-weight: 600;
+    }
+    #project-section .project-text-2{
+        font-size: 18px;
+    }
+    #project-section #project{
+        width: 85%;
+        height: 90vh;
+        margin-top: -20px;
+    }
+    #project-section .project-part-1-A-tools{
+        display: flex;
+        display: none;
+        width: 35%;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #project-section .project-part-1-A-tools img{
+        width: 30px;
+        border: 1px solid var(--primary);
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: var(--primary) 0px 2px 5px;
+    }
+    #project-section .project-part-1-A-tools img:hover{
+        box-shadow: var(--primary) 0px 3px 8px;
+    }
+    #project-section .project-part-1-A-tools-text{
+        display: none;
+        font-size: 20px;
+        color: var(--primary);
+    }
+    #project-section .project-part-1-A{
+        width: 100%;
+    }
+    #project-section .project-part-1-A-img img{
+        width: 100%;
+        height: auto;
+        background-color: var(--primary);
+        opacity: 0.8;
+    }
+    #project-section .project-part-1-B{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #project-section .project-part-1-B-header{
+        display: none;
+    }
+    #project-section .project-part-1-header{
+        display: block;
+        font-size: 25px;
+        color: var(--primary);
+        margin-bottom: 10px;
+    }
+    #project-section .project-part-1-B-desc{
+        text-align: justify;
+        font-size: 13px;
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /* #project-section .project-part-1-B-desc>div:nth-child(1){
+        display: none;
+    } */
+    #project-section .project-part-1-B-desc>div:nth-child(4){
+        display: none;
+    }
+    #project-section .project-part-1-B-btn{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #project-section .project-part-1-B-btn a{
+        cursor: pointer;
+        color: var(--primary);
+        background-color: transparent;
+        border: 1.5px solid var(--primary);
+        border-radius: 7px;
+        padding: 9px 10px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    #project-section .project-part-1-B-btn a:hover{
+        border: none;
+        color: var(--dark);
+        background-color: var(--primary);
+        transition: 0.3s;
+        width: fit-content;
+        height: fit-content;
+    }
+}
+@media all and (min-width:320px) and (max-width:480px){
+    #project-section .project-part-1{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border-radius: 7px;
+        box-shadow: var(--primary) 0px 3px 8px;
+        margin-bottom: 30px;
+    }
+    #project-section .project-text-1{
+        text-align: center;
+        color: var(--primary);
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #project-section .project-text-2{
+        font-size: 15px;
+    }
+    #project-section #project{
+        width: 90%;
+        height: 90vh;
+        margin-top: -20px;
+    }
+    #project-section .project-part-1-A-tools{
+        display: flex;
+        display: none;
+        width: 35%;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #project-section .project-part-1-A-tools img{
+        width: 30px;
+        border: 1px solid var(--primary);
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: var(--primary) 0px 2px 5px;
+    }
+    #project-section .project-part-1-A-tools img:hover{
+        box-shadow: var(--primary) 0px 3px 8px;
+    }
+    #project-section .project-part-1-A-tools-text{
+        display: none;
+        font-size: 18px;
+        color: var(--primary);
+    }
+    #project-section .project-part-1-A{
+        width: 100%;
+    }
+    #project-section .project-part-1-A-img img{
+        width: 100%;
+        height: auto;
+        background-color: var(--primary);
+        opacity: 0.8;
+    }
+    #project-section .project-part-1-B{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #project-section .project-part-1-B-header{
+        display: none;
+    }
+    #project-section .project-part-1-header{
+        display: block;
+        font-size: 25px;
+        color: var(--primary);
+        margin-bottom: 10px;
+    }
+    #project-section .project-part-1-B-desc{
+        text-align: justify;
+        font-size: 11px;
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /* #project-section .project-part-1-B-desc>div:nth-child(1){
+        display: none;
+    } */
+    #project-section .project-part-1-B-desc>div:nth-child(4){
+        display: none;
+    }
+    #project-section .project-part-1-B-btn{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #project-section .project-part-1-B-btn a{
+        cursor: pointer;
+        color: var(--primary);
+        background-color: transparent;
+        border: 1.5px solid var(--primary);
+        border-radius: 7px;
+        padding: 9px 9px;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+    #project-section .project-part-1-B-btn a:hover{
+        border: none;
+        color: var(--dark);
+        background-color: var(--primary);
+        transition: 0.3s;
+        width: fit-content;
+        height: fit-content;
+    }
+}
 /* github-calender-section */
 #github-calender-section{
     width: 100%;
-    height: 125vh;
+    height: 100vh;
     font-family: 'Ubuntu' , sans-serif;
     text-align: center;
     background-color: var(--ternary);
@@ -1043,10 +1594,11 @@ html{
 /* contact-section */
 #contact-section{
     width: 100%;
-    height: 105vh;
+    height: 100vh;
     font-family: 'Ubuntu' , sans-serif;
     text-align: center;
     background-color: var(--ternary);
+    margin-top: -75px;
 }
 #contact-section .contact-text-1{
     font-size: 30px;
@@ -1431,9 +1983,9 @@ html{
         background-color: var(--primary);
         border: none;
         border-radius: 6px;
-        padding: 10px 10px;
+        padding: 12px 12px;
         font-family: 'Ubuntu' , sans-serif;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         font-weight: 500;
         margin-left: 25px;
     }
@@ -1490,7 +2042,7 @@ html{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
