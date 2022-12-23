@@ -11,4 +11,8 @@ $(document).ready(()=>{
         $('#navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+
+    $('.menu a').click(function(){
+        $('.menu a').toggleClass;
+    })
 });

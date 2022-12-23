@@ -23,20 +23,23 @@ html{
     position: fixed;
     font-family: 'Ubuntu' , sans-serif;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 25px 0;
     background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+    z-index: 999;
 }
 #navbar.sticky{
     padding: 15px 0;
     background: var(--primary);
     transition: 0.3s;
+    z-index: 999;
 }
 #navbar .name-logo{
     color: var(--light);
     font-size: 30px;
     font-weight: 600;
+    margin-left: 10%;
 }
 #navbar.sticky .name-logo{
     color: var(--dark);
@@ -45,7 +48,8 @@ html{
 #navbar .menu{
     width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-right: 10%;
 }
 #navbar .menu a{
     color: var(--light);
@@ -90,12 +94,26 @@ html{
     }
 }
 @media (max-width:768px){
+    #navbar{
+        padding: 20px 0;
+    }
+    #navbar.sticky{
+        padding: 13px 0;
+        background: var(--primary);
+        transition: 0.3s;
+    }
+    #navbar .name-logo{
+        color: var(--light);
+        font-size: 27px;
+        font-weight: 600;
+    }
     .menu-btn i.active:before{
         content: "\f00d";
     }
     #navbar .menu-btn{
         display: block;
         z-index: 999;
+        margin-right: 10%;
     }
     #navbar .menu{
         width: 100%;
@@ -117,6 +135,31 @@ html{
         color: white;
         margin-bottom: 25px;
         font-size: 25px;
+    }
+    #navbar.sticky .menu a{
+        color: var(--light);
+        transition: 0.3s;
+    }
+    #navbar.sticky .menu a:hover{
+        color: var(--primary);
+        transition: 0.3s;
+    }
+    @media (max-width:480px){
+        #navbar .name-logo{
+            margin-left: 5%;
+        }
+
+        #navbar .menu-btn{
+            margin-right: 5%;
+        }
+
+        #navbar .menu a{
+            font-size: 23px;
+        }
+
+        #navbar .menu a:hover{
+            color: var(--primary);
+        }
     }
 }
 
@@ -1048,6 +1091,7 @@ html{
     #education-section .education-text-1{
         font-size: 25px;
         font-weight: 600;
+        margin-top: 25px;
     }
     #education-section .education-text-2{
         font-size: 17px;
@@ -1235,6 +1279,18 @@ html{
 }
 /* project-section-responsiveness */
 @media all and (min-width:769px) and (max-width:1040px){
+    #project-section{
+        width: 100%;
+        height: auto;
+        color: var(--light);
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+        font-family: 'Ubuntu' , sans-serif;
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+        background-attachment: fixed;
+    }
     #project-section .project-part-1{
         width: 100%;
         height: 65vh;
@@ -1317,6 +1373,18 @@ html{
     }
 }
 @media all and (min-width:480px) and (max-width:768px){
+    #project-section{
+        width: 100%;
+        height: 480vh;
+        color: var(--light);
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+        font-family: 'Ubuntu' , sans-serif;
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+        background-attachment: fixed;
+    }
     #project-section .project-part-1{
         width: 100%;
         height: auto;
@@ -1327,13 +1395,14 @@ html{
         flex-direction: column;
         border-radius: 7px;
         box-shadow: var(--primary) 0px 3px 8px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     #project-section .project-text-1{
         text-align: center;
         color: var(--primary);
         font-size: 28px;
         font-weight: 600;
+        margin-top: 100px;
     }
     #project-section .project-text-2{
         font-size: 18px;
@@ -1435,7 +1504,33 @@ html{
         height: fit-content;
     }
 }
+@media all and (min-width:480px) and (max-width:600px){
+    #project-section{
+        width: 100%;
+        height: 450vh;
+        color: var(--light);
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+        font-family: 'Ubuntu' , sans-serif;
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+        background-attachment: fixed;
+    }
+}
 @media all and (min-width:320px) and (max-width:480px){
+    #project-section{
+        width: 100%;
+        height: 375vh;
+        color: var(--light);
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+        font-family: 'Ubuntu' , sans-serif;
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/003/052/043/small/abstract-network-line-background-free-video.jpg"), no-repeat, center;
+        background-attachment: fixed;
+    }
     #project-section .project-part-1{
         width: 100%;
         height: auto;
@@ -1446,13 +1541,14 @@ html{
         flex-direction: column;
         border-radius: 7px;
         box-shadow: var(--primary) 0px 3px 8px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     #project-section .project-text-1{
         text-align: center;
         color: var(--primary);
         font-size: 25px;
         font-weight: 600;
+        margin-top: 80px;
     }
     #project-section .project-text-2{
         font-size: 15px;
