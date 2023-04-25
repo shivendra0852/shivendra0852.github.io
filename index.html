@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivendra's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="calendar.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="navbar">
+            <div class="name-logo">Shivendra!</div>
+            <div class="menu">
+                <a href="#home-section">Home</a>
+                <a href="#about-section">About</a>
+                <a href="#education-section">Education</a>
+                <a href="#skill-section">Skills</a>
+                <a href="#project-section">Projects</a>
+                <a href="./media/fw20_0384-Shivendra-Shrivastwa-Resume.pdf" download onclick="openResume()">Resume</a>
+                <a href="#contact-section">Contact</a>
+            </div>
+            <!-- <input type="checkbox" id="check" onclick="mycheck()"> -->
+            <label for="check" class="menu-btn">
+                <i class="uil uil-bars"></i>
+            </label>
+        </div>
+        <section id="home-section" class="home-section">
+            <div id="home">
+                
+                <div class="profile-details">
+                    <div class="text-1">
+                        Hey, I'm <span class="text-1-name">Shivendra!</span>
+                    </div>
+                    <div class="text-2">Java Back End Developer</div>
+                    <div class="text-3">A passionate Java Back End Developer having a problem solving mindset and better
+                        team management skills. Also able to adapt different ethical work culture very easily.</div>
+                    <a href="./media/fw20_0384-Shivendra-Shrivastwa-Resume.pdf" class="appointment-btn" download onclick="openResume()">Resume &nbsp; <i class="uil uil-file-download"></i></a>
+                </div>
+                <div class="shivendra-image">
+                    <svg id="home_blob" viewBox="0 -20 230 215" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0" mask-type="alpha">
+                            <path
+                                d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path
+                                d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            <image id="home_blob-image" xlink:href="media\shivendra0852.jpg" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section id="about-section" class="about-section">
+            <div id="about">
+                <div class="about-part-1">
+                    <div class="about-text-1">About Me</div>
+                    <div class="about-text-2">---Introduction---</div>
+                </div>
+                <div class="about-part-2">
+                    <div class="about-image">
+                        <img src="media\shivendra.png" alt="image">
+                    </div>
+                    <div class="about-intro">
+                        <div class="about-intro-text-1">
+                            A passionate Java backend developer with skills in building RESTful APIs, JDBC applications, and web applications. Possess excellent problem-solving skills and the ability to work both independently and as part of a team. Passionate about learning and seeking opportunities to start my career as a Java backend developer and contribute to developing innovative software solutions.
+                        </div>
+                        <div class="about-intro-text-2">
+                            <div class="box-1"><span class="text-1">10+</span><br> Months coding exeperience</div>
+                            <div class="box-2"><span class="text-2">500+</span><br> Github commits</div>
+                            <div class="box-3"><span class="text-3">30+</span><br> Leetcode problem solved</div>
+                        </div>
+                        <!-- <a href="https://drive.google.com/file/d/1MoTc7gZjvrfdnk3QEu77HPIjI_PiWsKV/view?usp=sharing" target="_blank" class="resume-btn">Resume &nbsp;<i class="uil uil-file-download"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skill-section">
+            <div id="skill">
+                <div class="skill-text-1">Tech Stacks & Tools</div>
+                <div class="skill-part-1">
+                    <div class="frontend-text">Front End</div>
+                    <div class="frontend-icons">
+                        <div>
+                            <img src="media\icons8-html-5-250.png" alt="html">
+                            <div>HTML</div>
+                        </div>
+                        <div>
+                            <img src="media\icons8-css3-300.png" alt="css">
+                            <div>CSS</div>
+                        </div>
+                        <div>
+                            <img src="media\icons8-javascript-250.png" alt="js">
+                            <div>JS</div>
+                        </div>
+                    </div>
+                    <div class="backend-text">Back End</div>
+                    <div class="backend-icons">
+                        <div>
+                            <img src="media\icons8-java-250.png" alt="java">
+                            <div>Java</div>
+                        </div>
+                        <div>
+                            <img src="media\icons8-sql-100.png" alt="sql">
+                            <div>SQL</div>
+                        </div>
+                        <div>
+                            <img src="media\icons8-hibernate-100.png" alt="hibernate">
+                            <div>Hibernate</div>
+                        </div>
+                        <div>
+                            <img src="media\icons8-amazon-web-services-300.png" alt="">
+                            <div>AWS</div>
+                        </div>
+                        <div>
+                            <img src="media\icons8-rest-api-100.png" alt="api">
+                            <div>Rest API</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-part-2"></div>
+            </div>
+        </section>
+
+
+        <section id="education-section">
+            <div id="education">
+                <div class="education-header">
+                    <div class="education-text-1">Education</div>
+                    <div class="education-text-2">---Qualification---</div>
+                </div>
+                <div class="education-main">
+                    <div class="education-part-1">
+                        <div>
+                            <div class="text-1">Java BackEnd Development</div>
+                            <div class="text-2">MASAI SCHOOL</div>
+                            <div class="text-3">May, 2022 - Jan, 2023</div>
+                            <a href="" target="_blank" class="certificate-btn">Certificate &nbsp;<i class="uil uil-file-download"></i></a>
+                            <br>
+                            <div class="text-4">Completed a Java Back End Development course and accquired strong knowledge in Hibernate, JPA, RDBMS, LLD, Spring Boot, Deployment on AWS, etc. and 1200+ hours coding exeperience at Masai School.</div>
+                        </div>
+                    </div>
+                    <div class="education-part-2">
+                        <div>
+                            <div class="text-1">Bachelor of Arts (Political Science Hons.)</div>
+                            <div class="text-2">M. J. K. College (Bettiah)</div>
+                            <div class="text-3">June, 2020 - Pursuing</div>
+                            <br>
+                            <div class="text-4">Pursuing Bachelor of Arts (Political Science Hons.) from M. J. K. College, Bettiah - (845438) from Indra Gandhi National Open University.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="project-section">
+            <div id="project">
+                <div class="project-text-1">Projects</div>
+                <div class="project-text-2">Here's a few projects, I have worked recently</div>
+
+
+
+                <div class="project-part-1">
+                    <div class="project-part-1-header">GreenHood</div>
+                    <div class="project-part-1-A">
+                        <div class="project-part-1-A-img">
+                            <img src="media\1674396863147.jpg" alt="greenhood">
+                        </div>
+                        <div class="project-part-1-A-tools">
+                            <img src="media\icons8-java-250.png" alt="icon">
+                            <img src="media\icons8-hibernate-100.png" alt="icon">
+                            <img src="media\icons8-sql-100.png" alt="icon">
+                            <img src="media\icons8-rest-api-100.png" alt="icon">
+                        </div>
+                        <div class="project-part-1-A-tools-text">Tech Stacks</div>
+                    </div>
+                    <div class="project-part-1-B">
+                        <div class="project-part-1-B-header">GreenHood</div>
+                        <div class="project-part-1-B-desc">
+                            <div>
+                                <i class="uil uil-navigator"></i>
+                                GreenHood is the perfect solution for plant enthusiasts! Our innovative Rest API enables an online plant nursery application to manage all aspects of their operations with ease.
+                              </div>
+                              
+                              <div>
+                                <i class="uil uil-navigator"></i>
+                                With a team of 5 skilled developers, we have created a Web services application that is specifically designed to cater to the needs of front-end developers, allowing them to easily call various types of API as per their requirements.
+                              </div>
+                              
+                              <div>
+                                <i class="uil uil-navigator"></i>
+                                Our Rest API has been built with top-notch authentication and validation protocols to ensure ease of use and maximum security for our users.
+                              </div>
+                              
+                              <div>
+                                <i class="uil uil-navigator"></i>
+                                We take pride in our work, and we're especially proud of our admin and customer authentication functionalities, which are second to none.
+                              </div>                              
+                        </div>
+                        <div class="project-part-1-B-btn">
+                            <a href="https://drive.google.com/drive/u/0/folders/1e3D3FLbWeNj0YWJ9H3noRySS8_ZPXnBY" target="_blank">Prasentation &nbsp; <i class="uil uil-external-link-alt"></i></a>
+                            <a href="https://github.com/shivendra0852/Online-Plant-Nursery-Rest-API" target="_blank"><i class="uil uil-github"></i> View Code</a>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="project-part-1">
+                    <div class="project-part-1-header">FoodExpress</div>
+                    <div class="project-part-1-A">
+                        <div class="project-part-1-A-img">
+                            <img src="media\food-express-logo-design_79169-3 conv.jpeg" alt="gusto">
+                        </div>
+                        <div class="project-part-1-A-tools">
+                            <img src="media\icons8-java-250.png" alt="">
+                            <img src="media\icons8-hibernate-100.png" alt="">
+                            <img src="media\icons8-sql-100.png" alt="">
+                            <img src="media\icons8-rest-api-100.png" alt="">
+                        </div>
+                        <div class="project-part-1-A-tools-text">Tech Stacks</div>
+                    </div>
+                    <div class="project-part-1-B">
+                        <div class="project-part-1-B-header">FoodExpress</div>
+                        <div class="project-part-1-B-desc">
+                            <div>
+                                <i class="uil uil-navigator"></i>
+                                FoodExpress is the ultimate solution for food lovers! Our Rest API application, developed by a talented team of 5 members using the Spring-Boot framework, provides seamless integration of different types of API to meet the diverse needs of front-end developers.
+                            </div>
+                            
+                            <div>
+                                <i class="uil uil-navigator"></i>
+                                With our website, customers can easily sign up and explore the wide variety of dishes available in our restaurant, placing orders quickly and effortlessly.
+                            </div>
+                            
+                            <div>
+                                <i class="uil uil-navigator"></i>
+                                At FoodExpress, we're committed to providing the best possible user experience. That's why we're especially proud of our exceptional sign up and sign in functionalities that offer seamless access to all the features of our website.
+                            </div>                            
+                        </div>
+                        <div class="project-part-1-B-btn">
+                            <a href="https://drive.google.com/file/d/1QVUFSuE6Dy-KK0e9XplJaxyZcb9FHncH/view?usp=sharing" target="_blank">Presentation &nbsp; <i class="uil uil-external-link-alt"></i></a>
+                            <a href="https://github.com/parimalbiswas/tropical-jellyfish-2222" target="_blank"><i class="uil uil-github"></i> View Code</a>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="project-part-1">
+                    <div class="project-part-1-header">Tendy</div>
+                    <div class="project-part-1-A">
+                        <div class="project-part-1-A-img">
+                            <img src="https://i.ytimg.com/vi/CAiyLv5Ct9M/maxresdefault.jpg" alt="gusto">
+                        </div>
+                        <div class="project-part-1-A-tools">
+                            <img src="media\icons8-java-250.png" alt="">
+                            <img src="media\icons8-hibernate-100.png" alt="">
+                            <img src="media\icons8-sql-100.png" alt="">
+                        </div>
+                        <div class="project-part-1-A-tools-text">Tech Stacks</div>
+                    </div>
+                    <div class="project-part-1-B">
+                        <div class="project-part-1-B-header">Tendy</div>
+                        <div class="project-part-1-B-desc">
+                            <div><i class="uil uil-navigator"></i>
+                                Tendy is the ultimate solution for efficient tender and vendor management! Our innovative JDBC application, developed by a talented individual, provides seamless integration between tenders and vendors for optimal functionality.</div>
+                            <div><i class="uil uil-navigator"></i>
+                                With our user-friendly interface and intuitive features, managing tenders and vendors has never been easier.</div>
+                            <div><i class="uil uil-navigator"></i>
+                                Tendy offers robust functionality, with admins being able to create tenders and view vendor lists, while vendors can easily bid on available tenders.</div>
+                            <div><i class="uil uil-navigator"></i>
+                                Our application boasts proper authentication and validation protocols, ensuring a smooth and secure experience for all users.</div>                            
+                        </div>
+                        <div class="project-part-1-B-btn">
+                            <a href="https://drive.google.com/drive/folders/1uYtSQlfXY29vIpF8U2cYOe-R8AkiH_og?usp=sharing" target="_blank">Prasentation &nbsp; <i class="uil uil-external-link-alt"></i></a>
+                            <a href="https://github.com/shivendra0852/potent-letter-3043" target="_blank"><i class="uil uil-github"></i> View Code</a>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="project-part-1">
+                    <div class="project-part-1-header">Gusto Clone</div>
+                    <div class="project-part-1-A">
+                        <div class="project-part-1-A-img">
+                            <img src="media\gusto_picture.png" alt="gusto">
+                        </div>
+                        <div class="project-part-1-A-tools">
+                            <img src="media\icons8-html-5-250.png" alt="">
+                            <img src="media\icons8-css3-300.png" alt="">
+                            <img src="media\icons8-javascript-250.png" alt="">
+                        </div>
+                        <div class="project-part-1-A-tools-text">Tech Stacks</div>
+                    </div>
+                    <div class="project-part-1-B">
+                        <div class="project-part-1-B-header">Gusto Clone</div>
+                        <div class="project-part-1-B-desc">
+                            <div>
+                                <i class="uil uil-navigator"></i>
+                                Gusto is the ultimate solution for businesses looking for cloud-based payroll, benefits, and human resource management software. Our powerful platform, developed by a talented team of 5 members, provides easy and efficient management of these critical business functions.
+                              </div>
+                              
+                              <div>
+                                <i class="uil uil-navigator"></i>
+                                Our group project allowed us to pool our expertise and resources to create a platform that's robust, reliable, and intuitive to use.
+                              </div>
+                              
+                              <div>
+                                <i class="uil uil-navigator"></i>
+                                With Gusto, users can quickly and easily sign up and sign in to the platform, accessing all of the features available on the original website with ease and convenience.
+                              </div>
+                              
+                              <div>
+                                <i class="uil uil-navigator"></i>
+                                As one of the developers on the project, I take pride in the work I've done on the sign-up and sign-in pages, cloning them to a 100% match with the original website to ensure a seamless experience for all users.
+                              </div>                              
+                        </div>
+                        <div class="project-part-1-B-btn">
+                            <a href="https://verdant-panda-50245c.netlify.app/index.html" target="_blank">Explore &nbsp; <i class="uil uil-external-link-alt"></i></a>
+                            <a href="https://github.com/iamamitkumarsaini/perpetual-paper-4225" target="_blank"><i class="uil uil-github"></i> View Code</a>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="project-part-1">
+                    <div class="project-part-1-header">Dermstore</div>
+                    <div class="project-part-1-A">
+                        <div class="project-part-1-A-img">
+                            <img src="media\dermstrore_picture.png" alt="dermstore">
+                        </div>
+                        <div class="project-part-1-A-tools">
+                            <img src="media\icons8-html-5-250.png" alt="">
+                            <img src="media\icons8-css3-300.png" alt="">
+                            <img src="media\icons8-javascript-250.png" alt="">
+                        </div>
+                        <div class="project-part-1-A-tools-text">Tech Stacks</div>
+                    </div>
+                    <div class="project-part-1-B">
+                        <div class="project-part-1-B-header">Dermstore Clone</div>
+                        <div class="project-part-1-B-desc">
+                            <div><i class="uil uil-navigator"></i>
+                                Welcome to DERMSTORE, the ultimate destination for all your cosmetic needs! In 2021, THG plc acquired us from Target Corporation and migrated us to their cutting-edge Ingenuity e-commerce platform.</div>
+                            <div><i class="uil uil-navigator"></i>
+                                As an individual project, I've poured my heart and soul into creating an experience that matches the original website down to the last detail.</div>
+                            <div><i class="uil uil-navigator"></i>
+                                With our platform, users can seamlessly sign up and sign in to explore all the products available on the original website.</div>
+                            <div><i class="uil uil-navigator"></i>
+                                And that's not all - our platform also enables users to add products to their cart and place orders with ease and convenience. So why wait? Start exploring our vast selection of cosmetics today!</div>
+                            
+                            <br>
+                        </div>
+                        <div class="project-part-1-B-btn">
+                            <a href="https://extraordinary-sopapillas-771fc2.netlify.app/" target="_blank">Explore &nbsp; <i class="uil uil-external-link-alt"></i></a>
+                            <a href="https://github.com/shivendra0852/symptomatic-cows-518" target="_blank"><i class="uil uil-github"></i> View Code</a>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="github-calender-section">
+            <div id="github-stats">
+                <h1>Days I Code</h1>
+                <br>
+                <div class="calendar" style="width:100%; margin-bottom: 50px;">    
+                </div>
+               
+               <!-- <div id="gs-1">
+                    <img  src="https://github-readme-streak-stats.herokuapp.com/?user=shivendra0852&" alt="shivendra-0852" />
+            
+                    <img  src="https://github-readme-stats.vercel.app/api?username=shivendra0852&show_icons=true" alt="shivendra-0852" />
+                </div> -->
+             </div>
+        </section>
+
+        <section id="contact-section">
+            <div id="contact">
+                <div class="contact-part-1">
+                    <div class="contact-text-1">Contact Me</div>
+                    <div class="contact-text-2">--- Get in Touch ---</div>
+                </div>
+                <div class="contact-part-2">
+                    <div class="contact-part-2-A">
+                        <div>
+                            <i class="uil uil-phone"></i>
+                            <div class="contact-line"><span class="call-me-A">Call Me</span><br> +91 6287821404</div>
+                        </div>
+                        <div>
+                            <i class="uil uil-envelope-alt"></i>
+                            <div class="email-line"><span class="email-A">Email</span><br> shivendrasince2001@gmail.com
+                            </div>
+                        </div>
+                        <div>
+                            <i class="uil uil-map-marker"></i>
+                            <div class="location-line"><span class="location-A">Location</span><br> Bettiah, Bihar -
+                                (845438)</div>
+                        </div>
+                    </div>
+                    <div class="contact-part-2-B">
+                        <input type="text" class="name" placeholder="Name">
+                        <input type="number" class="phone" placeholder="Contact No.">
+                        <input type="email" class="email" placeholder="Email">
+                        <input type="text" class="message" placeholder="Message">
+                    </div>
+                </div>
+                <span class="send-message-btn">Send Message &nbsp;<i class="uil uil-message"></i></span>
+                <div class="contact-part-3">
+                    <a href="https://github.com/shivendra0852" target="_blank" class="contact-github-icon">
+                        <i class="uil uil-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/shivendra-shrivastwa-492273237/" target="_blank"
+                        class="contact-linkedin-icon">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+
+                    <a href="https://twitter.com/shivendra0852" target="_blank" class="contact-twitter-icon">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer-section">
+            <div><i class="uil uil-copyright"></i> Created by <span class="footer-name">Shivedra Shrivastwa</span> | All rights reserved.</div>
+        </section>
+    </div>
+</body>
+
+</html>
+<script src="js/script.js"></script>
+<script src="calendar.js"></script>
+<script>
+    function openResume(){
+        window.open("https://drive.google.com/file/d/1MoTc7gZjvrfdnk3QEu77HPIjI_PiWsKV/view?usp=sharing");
+    }
+    GitHubCalendar(".calendar", "shivendra0852");
+    GitHubCalendar(".calendar", "shivendra0852", { responsive: true });
+</script>
+<!-- Done -->
